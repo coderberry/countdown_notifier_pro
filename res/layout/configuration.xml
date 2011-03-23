@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="10dp"
+	android:background="@xml/back_repeat">
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="10dip"
+		android:paddingRight="10dip">
+	
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Notification Message">
+		</TextView>
+		
+		<EditText
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:hint="Dad\'s Birthday"
+			android:id="@+id/fld_title">
+		</EditText>
+	
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Event Date">
+		</TextView>
+	
+		<DatePicker 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:id="@+id/DatePicker">
+		</DatePicker>
+	
+	</LinearLayout>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:orientation="horizontal"
+		android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="25dip" >
+
+		<Button 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="2" 
+			android:id="@+id/okbutton"
+			android:text="OK">
+		</Button>
+			
+		<Button 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:layout_weight="5"
+			android:text="Cancel"
+			android:id="@+id/cancelbutton">
+		</Button>
+			
+	</LinearLayout>
+</LinearLayout>
